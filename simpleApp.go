@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-
+	print(importUsage())
 }
 
 func wrong_name_style(b bool) int {
