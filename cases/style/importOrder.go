@@ -10,7 +10,7 @@ func main() {
 	print(importUsage())
 }
 
-func wrong_name_style(b bool) int {
+func normNameStyle(b bool) int {
 	var a int
 	var c = 2
 	var d = 3
