@@ -14,7 +14,7 @@ func NewSMap() *SMap {
 	}
 }
 
-func (m *SMap) Get(k string) string {
+func (m *SMap) GetGoodMutex(k string) string {
 	m.mu.Lock()
 	defer m.mu.Unlock()
 

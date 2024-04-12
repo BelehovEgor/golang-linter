@@ -15,7 +15,7 @@ func (r Rectangle2) Area() float64 {
 	return r.Width * r.Height
 }
 
-func main() {
+func mainPointersGood() {
 	rectangle := Rectangle2{Width: 5, Height: 3}
 
 	var shapePtr Shape2
