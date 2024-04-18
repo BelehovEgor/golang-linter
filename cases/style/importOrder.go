@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 	"github.com/json-iterator/go"
+	"golang-linter/cases/custom"
 	"os"
 )
 
 func main() {
-	print(importUsage())
+	custom.TestMutexGood()
 }
 
 func normNameStyle(b bool) int {
