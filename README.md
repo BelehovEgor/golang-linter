@@ -13,11 +13,11 @@
 
 ### Custom PA
 
-* Variable usage with mutex check - possible with tags ad CFG. Highlighting: **WARNING** (cause of accuracy?)
-* Null interface call check - possible with CFG. Highlighting: **WARNING** (cause of accuracy?)
-* Cast interface to type check - possible with AST (golang-linter should check that first var is interface).
-  Highlighting: **WARNING** (cause of accuracy?). !ATTENTION! `res = a.(b)` valid for checker if `b` implement `a`. Need
-  TypeCheck? UPD: intllijIdea detect this rule
+* [ ] Variable usage with mutex check - possible with tags ad CFG. Highlighting: **WARNING** (cause of accuracy?)
+* [ ] Null interface call check - possible with CFG. Highlighting: **WARNING** (cause of accuracy?)
+* [x] Cast interface to type check - possible with AST (golang-linter should check that first var is interface).
+Highlighting: **WARNING** (cause of accuracy?). !ATTENTION! `res = a.(b)` valid for checker if `b` implement `a`. Need
+TypeCheck? UPD: Detected by existing linters
 
 ### [UBER](https://github.com/uber-go/guide/blob/master/style.md)
 
