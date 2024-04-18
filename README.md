@@ -16,7 +16,8 @@
 * Variable usage with mutex check - possible with tags ad CFG. Highlighting: **WARNING** (cause of accuracy?)
 * Null interface call check - possible with CFG. Highlighting: **WARNING** (cause of accuracy?)
 * Cast interface to type check - possible with AST (golang-linter should check that first var is interface).
-  Highlighting: **ERROR**. Grade: 😍
+  Highlighting: **WARNING** (cause of accuracy?). !ATTENTION! `res = a.(b)` valid for checker if `b` implement `a`. Need
+  TypeCheck? UPD: intllijIdea detect this rule
 
 ### [UBER](https://github.com/uber-go/guide/blob/master/style.md)
 
@@ -52,3 +53,5 @@
    possible with AST. Highlighting: **WARNING** (cause of "usually"). Grade: 😍
 8. [Start Enums at One](https://github.com/uber-go/guide/blob/master/style.md#start-enums-at-one) -
    possible with AST. Highlighting: **WARNING** (cause of "usually"). Grade: 😍
+9. [Avoid Mutable Globals](https://github.com/uber-go/guide/blob/master/style.md#avoid-mutable-globals) - possible with
+   AST? Detect global `var` declaration is enough. Highlighting: **WARNING** (cause of "usually"). Grade: 😍
