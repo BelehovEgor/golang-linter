@@ -16,16 +16,14 @@ func (receiver concreteType) someInterfaceMethod() {
 
 func castCheckGood() {
 	var someInterfaceV someInterface
-	a, ok := someInterfaceV.(concreteType) // never panics
-	print(a)
+	_, ok := someInterfaceV.(concreteType) // never panics
 	print(ok)
-
 }
 
 func castCheckGoodToo() {
 	var someInterfaceV someInterface
-	a := someInterfaceV.(concreteType) // type assertion, can panic, check
-	print(a)
+	c := someInterfaceV.(concreteType) // type assertion, can panic, check
+	c.someInterfaceMethod()
 }
 
 func castCheckBad(someInterfaceV someInterface) {
