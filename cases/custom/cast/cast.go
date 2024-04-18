@@ -29,6 +29,7 @@ func castCheckGoodToo() {
 }
 
 func castCheckBad(someInterfaceV someInterface) {
-	a := someInterfaceV.(concreteType2) // type assertion, can panic, check
-	print(a)
+	//does not compile
+	//a := someInterfaceV.(concreteType2) // type assertion, can panic, check
+	//print(a)
 }
