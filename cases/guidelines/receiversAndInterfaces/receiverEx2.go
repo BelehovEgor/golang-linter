@@ -26,5 +26,6 @@ func testReceivers2() {
 	// The following doesn't compile, since s2Val is a value, and there is no value receiver for f.
 	//i = s2Val
 
-	print(i, s2Val) //for var usage
+	s2Val.f()
+	print(i) //for var usage
 }
