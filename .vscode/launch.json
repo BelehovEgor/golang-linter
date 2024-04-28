@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}\\cmd\\string-converter\\main.go",
+            "program": "${workspaceFolder}\\cmd\\avoid-mutable-globals\\main.go",
             "args": ["./example.go"]
         }
     ]
