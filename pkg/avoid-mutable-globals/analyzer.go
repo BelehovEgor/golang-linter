@@ -1,8 +1,10 @@
 package avoid_mutable_globals
 
 import (
+	"fmt"
 	"go/ast"
-	ObjKind "go/ast"
+
+	"golang-linter/pkg/common"
 
 	"golang.org/x/tools/go/analysis"
 )
@@ -22,8 +24,15 @@ func run(pass *analysis.Pass) (interface{}, error) {
 
 		objects := file.Scope.Objects
 		for _, element := range objects {
-			if element.Kind == ObjKind.Var {
-				pass.Reportf(node.Pos(), "Don't use mutable global variable '%s', use dependency injection.", element.Name)
+			if element.Kind == ast.Var {
+
+				diagnostic := analysis.Diagnostic{
+					Pos:      node.Pos(),
+					End:      node.End(),
+					Category: common.Warning,
+					Message:  fmt.Sprintf("Don't use mutable global variable '%s', use dependency injection.", element.Name),
+				}
+				pass.Report(diagnostic)
 			}
 		}
 

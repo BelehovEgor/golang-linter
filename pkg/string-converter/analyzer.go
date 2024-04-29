@@ -3,6 +3,8 @@ package analyzer_string_converter
 import (
 	"go/ast"
 
+	"golang-linter/pkg/common"
+
 	"golang.org/x/tools/go/analysis"
 )
 
@@ -40,7 +42,13 @@ func run(pass *analysis.Pass) (interface{}, error) {
 			return true
 		}
 
-		pass.Reportf(node.Pos(), "Use 'strconv' instead 'fmt' for converting type to/from string")
+		diagnostic := analysis.Diagnostic{
+			Pos:      node.Pos(),
+			End:      node.End(),
+			Category: common.Error,
+			Message:  "Use 'strconv' instead 'fmt' for converting type to/from string",
+		}
+		pass.Report(diagnostic)
 
 		return true
 	}

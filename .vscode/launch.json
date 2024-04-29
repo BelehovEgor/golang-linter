@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}\\cmd\\avoid-mutable-globals\\main.go",
+            "program": "${workspaceFolder}\\cmd\\start-enums-at-one\\main.go",
             "args": ["./example.go"]
         }
     ]
