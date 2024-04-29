@@ -11,8 +11,8 @@ func sign(msg string) string {
 	// Unbuffered channel, size of zero
 	_ = make(chan int)
 
-	_ = 10
-	_ = make(chan int, 14)
+	x := 10
+	_ = make(chan int, x)
 
 	if _someData > 10 {
 		return msg + "123"

@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}\\cmd\\channel-size\\main.go",
+            "program": "${workspaceFolder}\\cmd\\zero-value-mutexes\\main.go",
             "args": ["./example.go"]
         }
     ]
