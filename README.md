@@ -30,7 +30,7 @@ TypeCheck? UPD: Detected by existing linters
 2. [String to byte repeating avoid](https://github.com/uber-go/guide/blob/master/style.md#avoid-repeated-string-to-byte-conversions) -
    possible with AST (we just want to find "str to byte" in cycle)? 
    Highlighting: **WARNING** (cause of accuracy?).
-   Status: not implemented
+   Status: test
 3. [Map capacity](https://github.com/uber-go/guide/blob/master/style.md#avoid-repeated-string-to-byte-conversions) -
    possible with AST. 
    Highlighting: **WARNING** (cause of "try") 
