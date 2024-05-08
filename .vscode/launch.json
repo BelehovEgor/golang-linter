@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}\\cmd\\zero-value-mutexes\\main.go",
+            "program": "${workspaceFolder}\\cmd\\avoid-repeated-string-to-byte\\main.go",
             "args": ["./example.go"]
         }
     ]
