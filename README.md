@@ -84,8 +84,18 @@
     be useless. Grade: 😐
 11. [Error wrapping](https://github.com/uber-go/guide/blob/master/style.md#error-wrapping) - I don't understand
     example. I think they mean just apply context to error if possible. It looks like impossible for detection.
-12. [Handle Type Assertion Failures](https://github.com/uber-go/guide/blob/master/style.md#handle-type-assertion-failures)
-    - possible with AST. Highlighting: **WARNING** (cause of optional?).
+12. [Error naming](https://github.com/uber-go/guide/blob/master/style.md#error-naming) - Possible with AST. Highlighting: 
+    **Error** (because we can?). 
+    Grade: 😍.
+13. [Handle Errors Once](https://github.com/uber-go/guide/blob/master/style.md#handle-errors-once) - Possible with AST 
+    but better with CFG. All we want is check log error with return in one scope? Highlighting: **WARNING** (cause of accuracy).
+    Grade: 😐.
+14. [Handle Type Assertion Failures](https://github.com/uber-go/guide/blob/master/style.md#handle-type-assertion-failures) - 
+    possible with AST. Highlighting: **WARNING** (cause of optional?). 
+    Grade: 😍.
+15. [Don't Panic](https://github.com/uber-go/guide/blob/master/style.md#dont-panic) - possible with AST. Highlighting: **Error**.
+    Grade: 😍.
+16. 
 10. [Avoid Mutable Globals](https://github.com/uber-go/guide/blob/master/style.md#avoid-mutable-globals) - possible with 
     AST? Detect global `var` declaration is enough. Highlighting: **WARNING** (cause of "usually").
     Grade: 😍.
