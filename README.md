@@ -116,4 +116,6 @@
     Highlighting: **Error**.
     Grade: 😍.
     Status: **may be ready in default linters.**
-20. 
+20. [Avoid init()](https://github.com/uber-go/guide/blob/master/style.md#avoid-init)
+    possible with AST. Highlighting: **WARNING** (cause of optional?).
+    Grade: 😍.
