@@ -129,3 +129,7 @@
     for this task we need to get types (struct) of variables and find these structs. Go ast/cfg hold this data? 
     Highlighting: **WARNING** (cause of accuracy).
     Grade: 😐.
+24. [Don't fire-and-forget goroutines](https://github.com/uber-go/guide/blob/master/style.md#dont-fire-and-forget-goroutines) -
+    may be possible with AST, but I think it is confusing task.
+    Highlighting: **WARNING** (cause of accuracy).
+    Grade: 😐.
