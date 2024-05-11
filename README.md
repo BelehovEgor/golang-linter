@@ -123,5 +123,9 @@
     possible with AST. Highlighting: **Error**.
     Grade: 😍.
 22. [Exit Main Once](https://github.com/uber-go/guide/blob/master/style.md#exit-once)
-    possible with AST. Highlighting: **Highlight** (cause of "if possible").
+    possible with AST. Highlighting: **WARNING** (cause of "if possible").
     Grade: 😍.
+23. [Use field tags in marshaled structs](https://github.com/uber-go/guide/blob/master/style.md#use-field-tags-in-marshaled-structs) -
+    for this task we need to get types (struct) of variables and find these structs. Go ast/cfg hold this data? 
+    Highlighting: **WARNING** (cause of accuracy).
+    Grade: 😐.
