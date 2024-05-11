@@ -133,3 +133,6 @@
     may be possible with AST, but I think it is confusing task.
     Highlighting: **WARNING** (cause of accuracy).
     Grade: 😐.
+25. [No goroutines in init()](https://github.com/uber-go/guide/blob/master/style.md#no-goroutines-in-init) -
+    possible with AST. Highlighting: **Error**.
+    Grade: 😍.
