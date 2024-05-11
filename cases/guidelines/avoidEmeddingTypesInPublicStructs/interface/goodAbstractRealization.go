@@ -1,8 +1,8 @@
-package avoidEmeddingTypesInPublicStructs
+package _struct
 
 // ConcreteList is a list of entities.
 type ConcreteListGood struct {
-	list *AbstractList
+	list AbstractList
 }
 
 // Add adds an entity to the list.

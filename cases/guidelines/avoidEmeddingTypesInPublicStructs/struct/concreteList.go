@@ -1,4 +1,4 @@
-package avoidEmeddingTypesInPublicStructs
+package _struct
 
 type AbstractList struct{}
 
