@@ -122,3 +122,6 @@
 21. [Exit in Main](https://github.com/uber-go/guide/blob/master/style.md#exit-in-main) -
     possible with AST. Highlighting: **Error**.
     Grade: 😍.
+22. [Exit Main Once](https://github.com/uber-go/guide/blob/master/style.md#exit-once)
+    possible with AST. Highlighting: **Highlight** (cause of "if possible").
+    Grade: 😍.
