@@ -95,8 +95,8 @@
 14. [Handle Type Assertion Failures](https://github.com/uber-go/guide/blob/master/style.md#handle-type-assertion-failures) -
     possible with AST. Highlighting: **WARNING** (cause of optional?).
     Grade: 😍.
-15. [Don't Panic](https://github.com/uber-go/guide/blob/master/style.md#dont-panic) - possible with AST. Highlighting: *
-    *Error**.
+15. [Don't Panic](https://github.com/uber-go/guide/blob/master/style.md#dont-panic) - possible with AST. Highlighting:
+    **Error**.
     Grade: 😍.
 16. [Use go.uber.org/atomic](https://github.com/uber-go/guide/blob/master/style.md#use-gouberorgatomic) - possible with
     AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use bool. Highlighting:
@@ -108,6 +108,12 @@
     Status: test
 18. [Avoid Embedding Types in Public Structs](https://github.com/uber-go/guide/blob/master/style.md#avoid-embedding-types-in-public-structs) -
     Possible with AST but a more complex than other AST tasks. We need to find structures that use other structures from
-    our project and check that property declared? I think I'm wrong. 
+    our project and check that property declared? I think I'm wrong.
     Highlighting: **WARNING** (cause of accuracy).
     Grade: 😐
+19. [Avoid Using Built-In Names](https://github.com/uber-go/guide/blob/master/style.md#avoid-using-built-in-names) -
+    possible with AST? I don't know how look go parser rules, but it may be very easy.
+    Highlighting: **Error**.
+    Grade: 😍.
+    Status: **may be ready in default linters.**
+20. 
