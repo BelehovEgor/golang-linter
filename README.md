@@ -102,7 +102,12 @@
     AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use bool. Highlighting:
     **WARNING** (cause of optional?).
     Grade: 😐-😍.
-10. [Avoid Mutable Globals](https://github.com/uber-go/guide/blob/master/style.md#avoid-mutable-globals) - possible with
+17. [Avoid Mutable Globals](https://github.com/uber-go/guide/blob/master/style.md#avoid-mutable-globals) - possible with
     AST? Detect global `var` declaration is enough. Highlighting: **WARNING** (cause of "usually").
     Grade: 😍.
     Status: test
+18. [Avoid Embedding Types in Public Structs](https://github.com/uber-go/guide/blob/master/style.md#avoid-embedding-types-in-public-structs) -
+    Possible with AST but a more complex than other AST tasks. We need to find structures that use other structures from
+    our project and check that property declared? I think I'm wrong. 
+    Highlighting: **WARNING** (cause of accuracy).
+    Grade: 😐
