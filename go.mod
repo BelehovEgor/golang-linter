@@ -1,10 +1,13 @@
 module golang-linter
 
-go 1.22
+go 1.21.0
 
 require (
 	github.com/json-iterator/go v1.1.12
 	github.com/stretchr/testify v1.3.0
+	golang.org/x/mod v0.17.0 // indirect
+	golang.org/x/sync v0.7.0 // indirect
+	golang.org/x/tools v0.20.0
 )
 
 require (
