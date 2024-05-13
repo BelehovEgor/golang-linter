@@ -97,6 +97,7 @@
 15. [Don't Panic](https://github.com/uber-go/guide/blob/master/style.md#dont-panic) - possible with AST. Highlighting:
     **Error**.
     Grade: 😍.
+    Status: test
 16. [Use go.uber.org/atomic](https://github.com/uber-go/guide/blob/master/style.md#use-gouberorgatomic) - possible with
     AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use uber atomic. Highlighting:
     **WARNING** (cause of optional?).
