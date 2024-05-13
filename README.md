@@ -64,8 +64,7 @@
    Status: not implemented
 6. [Defer to Clean Up](https://github.com/uber-go/guide/blob/master/style.md#copy-slices-and-maps-at-boundaries) -
    possible with AST? We can just find usages of Unlock and Close operation outside `deffer`.
-   Highlighting: **WARNING
-   ** (cause of accuracy?).
+   Highlighting: **WARNING** (cause of accuracy?).
    Grade: 😍.
    Status: not implemented
 7. [Channel Size is One or None](https://github.com/uber-go/guide/blob/master/style.md#channel-size-is-one-or-none) -
@@ -99,7 +98,7 @@
     **Error**.
     Grade: 😍.
 16. [Use go.uber.org/atomic](https://github.com/uber-go/guide/blob/master/style.md#use-gouberorgatomic) - possible with
-    AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use bool. Highlighting:
+    AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use uber atomic. Highlighting:
     **WARNING** (cause of optional?).
     Grade: 😐-😍.
 17. [Avoid Mutable Globals](https://github.com/uber-go/guide/blob/master/style.md#avoid-mutable-globals) - possible with
