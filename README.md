@@ -94,6 +94,7 @@
 14. [Handle Type Assertion Failures](https://github.com/uber-go/guide/blob/master/style.md#handle-type-assertion-failures) -
     possible with AST. Highlighting: **WARNING** (cause of optional?).
     Grade: 😍.
+    Status: test
 15. [Don't Panic](https://github.com/uber-go/guide/blob/master/style.md#dont-panic) - possible with AST. Highlighting:
     **Error**.
     Grade: 😍.
