@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}\\cmd\\defer-to-clean-up\\main.go",
+            "program": "${workspaceFolder}\\cmd\\dont-panic\\main.go",
             "args": ["./example.go"]
         }
     ]

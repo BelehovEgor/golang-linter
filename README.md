@@ -66,7 +66,7 @@
    possible with AST? We can just find usages of Unlock and Close operation outside `defer`.
    Highlighting: **WARNING** (cause of accuracy?).
    Grade: 😍.
-   Status: not implemented
+   Status: draft
 7. [Channel Size is One or None](https://github.com/uber-go/guide/blob/master/style.md#channel-size-is-one-or-none) -
    possible with AST. Highlighting: **WARNING** (cause of "usually").
    Grade: 😍.
