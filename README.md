@@ -31,7 +31,7 @@
    possible with AST (we just want to find "str to byte" in cycle)?
    Highlighting: **WARNING** (cause of accuracy?).
    Status: test
-3. [Map capacity](https://github.com/uber-go/guide/blob/master/style.md#avoid-repeated-string-to-byte-conversions) -
+3. [Map capacity](https://github.com/uber-go/guide/blob/master/style.md#prefer-specifying-container-capacity) -
    possible with AST.
    Highlighting: **WARNING** (cause of "try")
    Grade: 😍.
@@ -62,8 +62,8 @@
    copies in some call - AST useless, it should be CFG analysis).
    Highlighting: **WARNING** (cause of accuracy?)
    Status: not implemented
-6. [Defer to Clean Up](https://github.com/uber-go/guide/blob/master/style.md#copy-slices-and-maps-at-boundaries) -
-   possible with AST? We can just find usages of Unlock and Close operation outside `deffer`.
+6. [Defer to Clean Up](https://github.com/uber-go/guide/blob/master/style.md#defer-to-clean-up) -
+   possible with AST? We can just find usages of Unlock and Close operation outside `defer`.
    Highlighting: **WARNING** (cause of accuracy?).
    Grade: 😍.
    Status: not implemented
