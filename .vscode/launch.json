@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}\\cmd\\handle-type-assertion-failures\\main.go",
+            "program": "${workspaceFolder}\\cmd\\error-naming\\main.go",
             "args": ["./example.go"]
         }
     ]
