@@ -31,7 +31,7 @@
    possible with AST (we just want to find "str to byte" in cycle)?
    Highlighting: **WARNING** (cause of accuracy?).
    Status: test
-3. [Map capacity](https://github.com/uber-go/guide/blob/master/style.md#avoid-repeated-string-to-byte-conversions) -
+3. [Map capacity](https://github.com/uber-go/guide/blob/master/style.md#prefer-specifying-container-capacity) -
    possible with AST.
    Highlighting: **WARNING** (cause of "try")
    Grade: 😍.
@@ -62,11 +62,11 @@
    copies in some call - AST useless, it should be CFG analysis).
    Highlighting: **WARNING** (cause of accuracy?)
    Status: not implemented
-6. [Defer to Clean Up](https://github.com/uber-go/guide/blob/master/style.md#copy-slices-and-maps-at-boundaries) -
-   possible with AST? We can just find usages of Unlock and Close operation outside `deffer`.
+6. [Defer to Clean Up](https://github.com/uber-go/guide/blob/master/style.md#defer-to-clean-up) -
+   possible with AST? We can just find usages of Unlock and Close operation outside `defer`.
    Highlighting: **WARNING** (cause of accuracy?).
    Grade: 😍.
-   Status: not implemented
+   Status: draft
 7. [Channel Size is One or None](https://github.com/uber-go/guide/blob/master/style.md#channel-size-is-one-or-none) -
    possible with AST. Highlighting: **WARNING** (cause of "usually").
    Grade: 😍.
@@ -94,9 +94,11 @@
 14. [Handle Type Assertion Failures](https://github.com/uber-go/guide/blob/master/style.md#handle-type-assertion-failures) -
     possible with AST. Highlighting: **WARNING** (cause of optional?).
     Grade: 😍.
+    Status: test
 15. [Don't Panic](https://github.com/uber-go/guide/blob/master/style.md#dont-panic) - possible with AST. Highlighting:
     **Error**.
     Grade: 😍.
+    Status: test
 16. [Use go.uber.org/atomic](https://github.com/uber-go/guide/blob/master/style.md#use-gouberorgatomic) - possible with
     AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use uber atomic. Highlighting:
     **WARNING** (cause of optional?).
