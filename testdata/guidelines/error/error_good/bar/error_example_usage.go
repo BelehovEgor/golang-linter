@@ -2,7 +2,7 @@ package bar
 
 import (
 	"errors"
-	"golang-linter/cases/guidelines/error/error_good/foo"
+	"golang-linter/testdata/guidelines/error/error_good/foo"
 )
 
 func some_func() {

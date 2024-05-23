@@ -1,6 +1,6 @@
 package bar
 
-import "golang-linter/cases/guidelines/error/error_bad/foo"
+import "golang-linter/testdata/guidelines/error/error_bad/foo"
 
 // package bar
 

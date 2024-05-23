@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/json-iterator/go"
-	"golang-linter/cases/custom"
+	"golang-linter/testdata/custom"
 	"os"
 )
 
