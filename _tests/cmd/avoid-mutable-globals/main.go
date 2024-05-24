@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	os.Args = []string{"avoidmutableglobals", "_tests/testdata/avoidMutableGlobals"}
+	os.Args = []string{"avoidmutableglobals", "golang-linter/_tests/testdata/guidelines/avoidMutableGlobals"}
 	singlechecker.Main(avoid_mutable_globals.Analyzer)
 }
