@@ -2,7 +2,7 @@ package enumsWithOne
 
 type Operation int
 
-const (
+const ( // want "In a constant 'Operation', the starting value 'Add' is equal 0."
 	Add Operation = iota
 	Subtract
 	Multiply

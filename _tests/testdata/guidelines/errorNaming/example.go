@@ -8,7 +8,7 @@ import (
 var (
 	errToBig   = errors.New("too big")
 	ErrToSmall = errors.New("too small")
-	invalid    = errors.New("invalid")
+	invalid    = errors.New("invalid") // want "Global error variable has to start with 'err' or 'Err' prefix"
 	notError   = 123
 )
 

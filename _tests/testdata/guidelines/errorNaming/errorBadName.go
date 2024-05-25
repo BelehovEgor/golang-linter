@@ -6,10 +6,9 @@ import (
 )
 
 var (
-	BrokenLink        = errors.New("link is broken")
-	CouldNotOpenError = errors.New("could not open")
-
-	NotFound = errors.New("not found")
+	BrokenLink        = errors.New("link is broken") // want "Global error variable has to start with 'err' or 'Err' prefix"
+	CouldNotOpenError = errors.New("could not open") // want "Global error variable has to start with 'err' or 'Err' prefix"
+	NotFound          = errors.New("not found")      // want "Global error variable has to start with 'err' or 'Err' prefix"
 )
 
 type ErrorNotFound struct {

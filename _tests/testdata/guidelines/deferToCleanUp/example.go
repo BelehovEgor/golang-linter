@@ -28,7 +28,7 @@ func work(number int, ch chan bool, mutex *sync.Mutex) {
 		counter++
 		fmt.Println("Goroutine", number, "-", counter)
 	}
-	mutex.Unlock() // деблокируем доступ
+	mutex.Unlock() // want "Use defer to clean up resources such as files and locks."
 	ch <- true
 }
 

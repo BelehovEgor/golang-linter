@@ -10,7 +10,7 @@ func do_smth() {
 	_ = []byte("Hello world")
 
 	for i := 0; i < 10; i++ {
-		fmt.Print([]byte("Hello world"))
-		_ = []byte("Hello world")
+		fmt.Print([]byte("Hello world")) // want "Do not create byte slices from a fixed string repeatedly. Instead, perform the conversion once and capture the result."
+		_ = []byte("Hello world")        // want "Do not create byte slices from a fixed string repeatedly. Instead, perform the conversion once and capture the result."
 	}
 }
