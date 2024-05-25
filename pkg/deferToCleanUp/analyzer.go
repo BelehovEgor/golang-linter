@@ -10,6 +10,7 @@ import (
 	"slices"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "defertocleanup",
 	Doc:  "Use defer to clean up resources such as files and locks.",

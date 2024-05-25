@@ -10,6 +10,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "avoidrepeatedstringtobyte",
 	Doc:  "Avoid creating byte slices from a fixed string repeatedly.",

@@ -8,6 +8,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "zerovaluemutexes",
 	Doc:  "The zero-value of sync.Mutex and sync.RWMutex is valid, so you almost never need a pointer to a mutex.",

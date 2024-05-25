@@ -8,6 +8,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "handletypeassertionfailures",
 	Doc:  "Always use the \"comma ok\" idiom.",

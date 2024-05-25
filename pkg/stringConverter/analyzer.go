@@ -8,6 +8,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "stringconverter",
 	Doc:  "Checks that using strconv for converting types to/from strings.",

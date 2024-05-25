@@ -10,6 +10,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "startenumsatone",
 	Doc: "The standard way of introducing enumerations in Go is to declare a custom type and a const group with iota." +

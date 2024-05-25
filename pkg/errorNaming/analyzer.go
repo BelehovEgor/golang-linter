@@ -10,6 +10,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer for golang-linter
 var Analyzer = &analysis.Analyzer{
 	Name: "errornaming",
 	Doc:  "For error values stored as global variables, use the prefix Err or err depending on whether they're exported.",
