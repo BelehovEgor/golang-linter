@@ -1,4 +1,4 @@
-package avoidMutableGlobals
+package avoidMutableGlobals // want  "Don't use mutable global variable '_timeNow', use dependency injection."
 
 import "time"
 

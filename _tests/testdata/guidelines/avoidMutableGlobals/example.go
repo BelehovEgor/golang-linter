@@ -1,4 +1,4 @@
-package avoidMutableGlobals
+package avoidMutableGlobals // want "Don't use mutable global variable '_someData', use dependency injection."
 
 var _someData = 123
 

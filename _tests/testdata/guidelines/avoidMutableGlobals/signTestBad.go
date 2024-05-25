@@ -1,12 +1,11 @@
 package avoidMutableGlobals
 
 import (
-	"github.com/stretchr/testify/assert"
-	"testing"
+	"fmt"
 	"time"
 )
 
-func TestSign(t *testing.T) {
+func SignTest() {
 	oldTimeNow := _timeNow
 	t2 := time.Date(
 		2009, 11, 17, 20, 34, 58, 651387237, time.UTC)
@@ -15,5 +14,5 @@ func TestSign(t *testing.T) {
 	}
 	defer func() { _timeNow = oldTimeNow }()
 
-	assert.Equal(t, "test"+t2.GoString(), sign("test"))
+	fmt.Println("test"+t2.GoString() == sign("test"))
 }

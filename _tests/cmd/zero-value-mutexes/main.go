@@ -2,7 +2,6 @@ package main
 
 import (
 	zero_value_mutexes "golang-linter/pkg/zero-value-mutexes"
-
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 
