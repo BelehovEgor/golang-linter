@@ -1,7 +1,6 @@
 package avoidRepeatedStringToByte
 
 import (
-	"fmt"
 	"go/ast"
 	"go/token"
 
@@ -89,7 +88,7 @@ func processExprStmt(pass *analysis.Pass, node ast.Node) bool {
 		Pos:      node.Pos(),
 		End:      node.End(),
 		Category: common.Warning,
-		Message:  fmt.Sprintf("Do not create byte slices from a fixed string repeatedly. Instead, perform the conversion once and capture the result."),
+		Message:  "Do not create byte slices from a fixed string repeatedly. Instead, perform the conversion once and capture the result.",
 	}
 	pass.Report(diagnostic)
 
