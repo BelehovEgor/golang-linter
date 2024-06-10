@@ -1,7 +1,7 @@
 package main
 
 import (
-	avoid_repeated_string_to_byte "golang-linter/pkg/avoidRepeatedStringToByte"
+	avoid_repeated_string_to_byte "github.com/BelehovEgor/golang-linter/pkg/avoidRepeatedStringToByte"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

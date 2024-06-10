@@ -1,7 +1,7 @@
 package main
 
 import (
-	channel_size "golang-linter/pkg/channelSize"
+	channel_size "github.com/BelehovEgor/golang-linter/pkg/channelSize"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

@@ -1,7 +1,7 @@
 package main
 
 import (
-	defer_to_clean_up "golang-linter/pkg/deferToCleanUp"
+	defer_to_clean_up "github.com/BelehovEgor/golang-linter/pkg/deferToCleanUp"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

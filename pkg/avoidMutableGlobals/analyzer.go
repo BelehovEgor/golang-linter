@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"go/ast"
 
-	"golang-linter/pkg/common"
+	"github.com/BelehovEgor/golang-linter/pkg/common"
 
 	"golang.org/x/tools/go/analysis"
 )

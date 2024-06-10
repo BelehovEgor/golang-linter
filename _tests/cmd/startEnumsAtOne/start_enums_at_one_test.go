@@ -1,7 +1,7 @@
 package main
 
 import (
-	start_enums_at_one "golang-linter/pkg/startEnumsAtOne"
+	start_enums_at_one "github.com/BelehovEgor/golang-linter/pkg/startEnumsAtOne"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

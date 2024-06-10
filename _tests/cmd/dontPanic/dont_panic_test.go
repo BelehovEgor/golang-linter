@@ -1,7 +1,7 @@
 package main
 
 import (
-	dont_panic "golang-linter/pkg/dontPanic"
+	dont_panic "github.com/BelehovEgor/golang-linter/pkg/dontPanic"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

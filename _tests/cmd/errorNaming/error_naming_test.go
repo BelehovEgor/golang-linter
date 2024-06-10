@@ -1,7 +1,7 @@
 package main
 
 import (
-	error_naming "golang-linter/pkg/errorNaming"
+	error_naming "github.com/BelehovEgor/golang-linter/pkg/errorNaming"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

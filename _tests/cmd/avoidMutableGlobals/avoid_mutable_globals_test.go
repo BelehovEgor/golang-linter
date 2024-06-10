@@ -1,7 +1,7 @@
 package main
 
 import (
-	avoid_mutable_globals "golang-linter/pkg/avoidMutableGlobals"
+	avoid_mutable_globals "github.com/BelehovEgor/golang-linter/pkg/avoidMutableGlobals"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"
