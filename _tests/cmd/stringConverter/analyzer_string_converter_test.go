@@ -1,7 +1,7 @@
 package main
 
 import (
-	analyzer_string_converter "golang-linter/pkg/stringConverter"
+	analyzer_string_converter "github.com/BelehovEgor/golang-linter/pkg/stringConverter"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

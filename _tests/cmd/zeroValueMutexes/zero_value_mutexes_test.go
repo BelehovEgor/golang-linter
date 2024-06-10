@@ -1,7 +1,7 @@
 package main
 
 import (
-	zero_value_mutexes "golang-linter/pkg/zeroValueMutexes"
+	zero_value_mutexes "github.com/BelehovEgor/golang-linter/pkg/zeroValueMutexes"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"

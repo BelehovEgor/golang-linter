@@ -1,7 +1,7 @@
 package main
 
 import (
-	handle_type_assertion_failures "golang-linter/pkg/handleTypeAssertionFailures"
+	handle_type_assertion_failures "github.com/BelehovEgor/golang-linter/pkg/handleTypeAssertionFailures"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"os"
 	"path/filepath"
