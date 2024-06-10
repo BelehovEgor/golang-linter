@@ -1,4 +1,4 @@
-module golang-linter
+module github.com/BelehovEgor/golang-linter
 
 go 1.21.0
 
