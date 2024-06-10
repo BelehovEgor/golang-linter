@@ -184,4 +184,5 @@ Highlighting: **WARNING** (cause of it is style?).
 12. [Prefix Unexported Globals with _](https://github.com/uber-go/guide/blob/master/style.md#prefix-unexported-globals-with-_) -
     possible with AST, but we need to analyze all project files for collect `import`.
     Grade: 😐.
-13. 
+13. [Embedding in Structs](https://github.com/uber-go/guide/blob/master/style.md#embedding-in-structs) -
+    
