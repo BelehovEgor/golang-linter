@@ -100,7 +100,8 @@
     Grade: 😍.
     Status: test
 16. [Use go.uber.org/atomic](https://github.com/uber-go/guide/blob/master/style.md#use-gouberorgatomic) - possible with
-    AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use uber atomic. Highlighting:
+    AST. We need detect types from [this](https://pkg.go.dev/go.uber.org/atomic) and suggest to use uber atomic.
+    Highlighting:
     **WARNING** (cause of optional?).
     Grade: 😐-😍.
 17. [Avoid Mutable Globals](https://github.com/uber-go/guide/blob/master/style.md#avoid-mutable-globals) - possible with
@@ -127,7 +128,7 @@
     possible with AST. Highlighting: **WARNING** (cause of "if possible").
     Grade: 😍.
 23. [Use field tags in marshaled structs](https://github.com/uber-go/guide/blob/master/style.md#use-field-tags-in-marshaled-structs) -
-    for this task we need to get types (struct) of variables and find these structs. Go ast/cfg hold this data? 
+    for this task we need to get types (struct) of variables and find these structs. Go ast/cfg hold this data?
     Highlighting: **WARNING** (cause of accuracy).
     Grade: 😐.
 24. [Don't fire-and-forget goroutines](https://github.com/uber-go/guide/blob/master/style.md#dont-fire-and-forget-goroutines) -
@@ -137,3 +138,68 @@
 25. [No goroutines in init()](https://github.com/uber-go/guide/blob/master/style.md#no-goroutines-in-init) -
     possible with AST. Highlighting: **Error**.
     Grade: 😍.
+
+#### Style
+
+Highlighting: **WARNING** (cause of it is style?).
+All rules need to check default realization in golangci-lint
+
+1. [Avoid overly long lines](https://github.com/uber-go/guide/blob/master/style.md#avoid-overly-long-lines) - 99 chars <
+   IntelliJ default limit for line. Possible with readLines)
+   Grade: 😍.
+   Status: **need to check default linter!**
+2. [Be Consistent](https://github.com/uber-go/guide/blob/master/style.md#be-consistent) -
+   general recommendation
+3. [Group Similar Declarations](https://github.com/uber-go/guide/blob/master/style.md#group-similar-declarations) -
+   partly possible with AST (last subrule).
+   Grade: 😍.
+4. [Import Group Ordering](https://github.com/uber-go/guide/blob/master/style.md#import-group-ordering) -
+   possible with AST. Already in golangci-lint?
+   Grade: 😐.
+   Status: **need to check default linter!**
+5. [Package Names](https://github.com/uber-go/guide/blob/master/style.md#package-names) -
+   possible with AST. Already in golangci-lint (partly).
+   Grade: 😍.
+   Status: **need to check default linter!**
+6. [Function Names](https://github.com/uber-go/guide/blob/master/style.md#function-names) -
+   possible with AST. Already in golangci-lint?
+   Grade: 😍.
+   Status: **need to check default linter!**
+7. [Import Aliasing](https://github.com/uber-go/guide/blob/master/style.md#import-aliasing) -
+   possible with AST, but we need to library sources.  
+   Grade: 😐.
+8. [Function Grouping and Ordering](https://github.com/uber-go/guide/blob/master/style.md#function-grouping-and-ordering) -
+   I think it is possible with AST, because we need only approximate order
+   of intra-procedure execution, but CFG more correct.
+   Grade: 😐.
+9. [Reduce Nesting](https://github.com/uber-go/guide/blob/master/style.md#reduce-nesting) -
+   partly possible with CFG.
+   Grade: 😐.
+10. [Unnecessary Else](https://github.com/uber-go/guide/blob/master/style.md#unnecessary-else) -
+    possible with CFG (mb AST).
+    Grade: 😐.
+11. [Top-level Variable Declarations](https://github.com/uber-go/guide/blob/master/style.md#top-level-variable-declarations) -
+    potential possible with AST, but I think we can't support this right now - for stable work we should check type of
+    any expression or identifier.
+    Grade: ☹️.
+12. [Prefix Unexported Globals with _](https://github.com/uber-go/guide/blob/master/style.md#prefix-unexported-globals-with-_) -
+    possible with AST, but we need to analyze all project files for collect `import`.
+    Grade: 😐.
+13. [Embedding in Structs](https://github.com/uber-go/guide/blob/master/style.md#embedding-in-structs) - possible with AST. Grade: 😍.
+14. [Local Variable Declarations](https://github.com/uber-go/guide/blob/master/style.md#local-variable-declarations) - possible with AST, but exist cases where the default value is clearer when the var keyword is used.
+15. [nil is a valid slice](https://github.com/uber-go/guide/blob/master/style.md#nil-is-a-valid-slice) - look like possible with AST, but I am not understand completely 
+16. [Reduce Scope of Variables](https://github.com/uber-go/guide/blob/master/style.md#reduce-scope-of-variables) - possible with CFG. Grade: ☹️.
+17. [Avoid Naked Parameters](https://github.com/uber-go/guide/blob/master/style.md#avoid-naked-parameters) - possible with AST but optional
+18. [Use Raw String Literals to Avoid Escaping](https://github.com/uber-go/guide/blob/master/style.md#use-raw-string-literals-to-avoid-escaping) - possible with AST. Grade: 😍.
+19. [Use Field Names to Initialize Structs](https://github.com/uber-go/guide/blob/master/style.md#use-field-names-to-initialize-structs) - possible with AST. Grade: 😍.
+20. [Omit Zero Value Fields in Structs](https://github.com/uber-go/guide/blob/master/style.md#omit-zero-value-fields-in-structs) - possible with AST. Grade: 😍.
+21. [Use var for Zero Value Structs](https://github.com/uber-go/guide/blob/master/style.md#use-var-for-zero-value-structs) - possible with AST. Grade: 😍.
+22. [Initializing Struct References](https://github.com/uber-go/guide/blob/master/style.md#initializing-struct-references) - possible with AST. Grade: 😍.
+23. [Initializing Maps](https://github.com/uber-go/guide/blob/master/style.md#initializing-maps) - partly possible with AST. Full coverage of rule with CFG.
+24. [Format Strings outside Printf](https://github.com/uber-go/guide/blob/master/style.md#format-strings-outside-printf) - possible with CFG (mb AST). Grade: 😐.
+25. [Naming Printf-style Functions](https://github.com/uber-go/guide/blob/master/style.md#naming-printf-style-functions) - I think it is impossible to check that functions is printf-style
+
+#### Patterns
+
+1. [Test tables](https://github.com/uber-go/guide/blob/master/style.md#test-tables)
+2. [Functional Options](https://github.com/uber-go/guide/blob/master/style.md#functional-options)
