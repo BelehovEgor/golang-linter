@@ -184,5 +184,21 @@ Highlighting: **WARNING** (cause of it is style?).
 12. [Prefix Unexported Globals with _](https://github.com/uber-go/guide/blob/master/style.md#prefix-unexported-globals-with-_) -
     possible with AST, but we need to analyze all project files for collect `import`.
     Grade: 😐.
-13. [Embedding in Structs](https://github.com/uber-go/guide/blob/master/style.md#embedding-in-structs) -
-    
+13. [Embedding in Structs](https://github.com/uber-go/guide/blob/master/style.md#embedding-in-structs) - possible with AST. Grade: 😍.
+14. [Local Variable Declarations](https://github.com/uber-go/guide/blob/master/style.md#local-variable-declarations)
+15. [nil is a valid slice](https://github.com/uber-go/guide/blob/master/style.md#nil-is-a-valid-slice)
+16. [Reduce Scope of Variables](https://github.com/uber-go/guide/blob/master/style.md#reduce-scope-of-variables)
+17. [Avoid Naked Parameters](https://github.com/uber-go/guide/blob/master/style.md#avoid-naked-parameters)
+18. [Use Raw String Literals to Avoid Escaping](https://github.com/uber-go/guide/blob/master/style.md#use-raw-string-literals-to-avoid-escaping)
+19. [Use Field Names to Initialize Structs](https://github.com/uber-go/guide/blob/master/style.md#use-field-names-to-initialize-structs)
+20. [Omit Zero Value Fields in Structs](https://github.com/uber-go/guide/blob/master/style.md#omit-zero-value-fields-in-structs)
+21. [Use var for Zero Value Structs](https://github.com/uber-go/guide/blob/master/style.md#use-var-for-zero-value-structs)
+22. [Initializing Struct References](https://github.com/uber-go/guide/blob/master/style.md#initializing-struct-references)
+23. [Initializing Maps](https://github.com/uber-go/guide/blob/master/style.md#initializing-maps)
+24. [Format Strings outside Printf](https://github.com/uber-go/guide/blob/master/style.md#format-strings-outside-printf)
+25. [Naming Printf-style Functions](https://github.com/uber-go/guide/blob/master/style.md#naming-printf-style-functions)
+
+#### Patterns
+
+1. [Test tables](https://github.com/uber-go/guide/blob/master/style.md#test-tables)
+2. [Functional Options](https://github.com/uber-go/guide/blob/master/style.md#functional-options)
