@@ -142,6 +142,7 @@
 #### Style
 
 Highlighting: **WARNING** (cause of it is style?).
+All rules need to check default realization in golangci-lint
 
 1. [Avoid overly long lines](https://github.com/uber-go/guide/blob/master/style.md#avoid-overly-long-lines) - 99 chars <
    IntelliJ default limit for line. Possible with readLines)
@@ -185,18 +186,18 @@ Highlighting: **WARNING** (cause of it is style?).
     possible with AST, but we need to analyze all project files for collect `import`.
     Grade: 😐.
 13. [Embedding in Structs](https://github.com/uber-go/guide/blob/master/style.md#embedding-in-structs) - possible with AST. Grade: 😍.
-14. [Local Variable Declarations](https://github.com/uber-go/guide/blob/master/style.md#local-variable-declarations)
-15. [nil is a valid slice](https://github.com/uber-go/guide/blob/master/style.md#nil-is-a-valid-slice)
-16. [Reduce Scope of Variables](https://github.com/uber-go/guide/blob/master/style.md#reduce-scope-of-variables)
-17. [Avoid Naked Parameters](https://github.com/uber-go/guide/blob/master/style.md#avoid-naked-parameters)
-18. [Use Raw String Literals to Avoid Escaping](https://github.com/uber-go/guide/blob/master/style.md#use-raw-string-literals-to-avoid-escaping)
-19. [Use Field Names to Initialize Structs](https://github.com/uber-go/guide/blob/master/style.md#use-field-names-to-initialize-structs)
-20. [Omit Zero Value Fields in Structs](https://github.com/uber-go/guide/blob/master/style.md#omit-zero-value-fields-in-structs)
-21. [Use var for Zero Value Structs](https://github.com/uber-go/guide/blob/master/style.md#use-var-for-zero-value-structs)
-22. [Initializing Struct References](https://github.com/uber-go/guide/blob/master/style.md#initializing-struct-references)
-23. [Initializing Maps](https://github.com/uber-go/guide/blob/master/style.md#initializing-maps)
-24. [Format Strings outside Printf](https://github.com/uber-go/guide/blob/master/style.md#format-strings-outside-printf)
-25. [Naming Printf-style Functions](https://github.com/uber-go/guide/blob/master/style.md#naming-printf-style-functions)
+14. [Local Variable Declarations](https://github.com/uber-go/guide/blob/master/style.md#local-variable-declarations) - possible with AST, but exist cases where the default value is clearer when the var keyword is used.
+15. [nil is a valid slice](https://github.com/uber-go/guide/blob/master/style.md#nil-is-a-valid-slice) - look like possible with AST, but I am not understand completely 
+16. [Reduce Scope of Variables](https://github.com/uber-go/guide/blob/master/style.md#reduce-scope-of-variables) - possible with CFG. Grade: ☹️.
+17. [Avoid Naked Parameters](https://github.com/uber-go/guide/blob/master/style.md#avoid-naked-parameters) - possible with AST but optional
+18. [Use Raw String Literals to Avoid Escaping](https://github.com/uber-go/guide/blob/master/style.md#use-raw-string-literals-to-avoid-escaping) - possible with AST. Grade: 😍.
+19. [Use Field Names to Initialize Structs](https://github.com/uber-go/guide/blob/master/style.md#use-field-names-to-initialize-structs) - possible with AST. Grade: 😍.
+20. [Omit Zero Value Fields in Structs](https://github.com/uber-go/guide/blob/master/style.md#omit-zero-value-fields-in-structs) - possible with AST. Grade: 😍.
+21. [Use var for Zero Value Structs](https://github.com/uber-go/guide/blob/master/style.md#use-var-for-zero-value-structs) - possible with AST. Grade: 😍.
+22. [Initializing Struct References](https://github.com/uber-go/guide/blob/master/style.md#initializing-struct-references) - possible with AST. Grade: 😍.
+23. [Initializing Maps](https://github.com/uber-go/guide/blob/master/style.md#initializing-maps) - partly possible with AST. Full coverage of rule with CFG.
+24. [Format Strings outside Printf](https://github.com/uber-go/guide/blob/master/style.md#format-strings-outside-printf) - possible with CFG (mb AST). Grade: 😐.
+25. [Naming Printf-style Functions](https://github.com/uber-go/guide/blob/master/style.md#naming-printf-style-functions) - I think it is impossible to check that functions is printf-style
 
 #### Patterns
 
